@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBQ - Q1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/static/images/star wars 3.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-size: 18px;
+        }
+        input[type="radio"] {
+            margin: 10px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Star Wars</h1>
+        <form action="/question1_feedback" method="post">
+            <label for="question1">In what years did the first trilogy (Episode 1-3) take place?</label>
+            <input type="radio" id="option1" name="question1" value="2334 BBY - 2321 BBY">
+            <label for="option1">2334 BBY - 2321 BBY</label><br>
+            <input type="radio" id="option2" name="question1" value="32 BBY - 19 BBY">
+            <label for="option2">32 BBY - 19 BBY</label><br>
+            <input type="radio" id="option3" name="question1" value="23 ABY - 36 ABY">
+            <label for="option3">23 ABY - 36 ABY</label><br>
+            <input type="radio" id="option4" name="question1" value="1139 ABY - 1152 ABY">
+            <label for="option4">1139 ABY - 1152 ABY</label><br>
+            <input type="submit" value="Next">
+        </form>
+    </div>
+</body>
+</html>

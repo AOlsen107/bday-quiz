@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakub's Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/static/images/jakub.png');
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .correct {
+            color: green;
+        }
+
+        .incorrect {
+            color: red;
+        }
+
+        .fun-facts {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .dynamic-content {
+            margin-top: 20px;
+            font-size: 16px;
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jakub's Results</h1>
+        <p class="correct">Correct Answers: {{ correct }}</p>
+        <p class="incorrect">Incorrect Answers: {{ incorrect }}</p>
+        <div class="fun-facts">
+            <h2>Fun Facts</h2>
+            <p>Did you know that...</p>
+            <ul>
+                <li>The UFC’s iconic octagon shape was inspired by the 1980s sci-fi movie The Running Man.</li>
+                <li>Yoda was a puppet in Episode I but was replaced with CGI in later versions.</li>
+                <li>Locusta of Gaul (often employed by Emperor Nero) is considered the first serial killer in history.
+                </li>
+            </ul>
+        </div>
+        <div class="dynamic-content">
+            <h2>What's next?</h2>
+            <p>Beerpong! #seeyouinthefinal</p>
+        </div>
+    </div>
+</body>
+
+</html>

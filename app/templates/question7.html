@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBQ - Q7</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/static/images/romemp.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-size: 18px;
+        }
+        input[type="radio"] {
+            margin: 10px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Roman Empire</h1>
+        <form action="/question7_feedback" method="post">
+            <label for="question7">In what year did the Western Roman Empire officially fall, marking the end of ancient Rome?
+            </label>
+            <input type="radio" id="option1" name="question7" value="410 AD">
+            <label for="option1">410 AD</label><br>
+            <input type="radio" id="option2" name="question7" value="476 AD">
+            <label for="option2">476 AD</label><br>
+            <input type="radio" id="option3" name="question7" value="330 AD">
+            <label for="option3">330 AD</label><br>
+            <input type="radio" id="option4" name="question7" value="1453 AD">
+            <label for="option4">1453 AD</label><br>
+            <input type="submit" value="Next">
+        </form>
+    </div>
+</body>
+</html>
